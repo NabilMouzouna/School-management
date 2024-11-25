@@ -9,7 +9,7 @@ public class Post {
     private String content;
     private LocalDateTime createdAt;
 
-    Post(String content, String userId) {
+    Post(String content) {
         idCounter++;
         this.postId += idCounter;
         this.content = content;
