@@ -1,3 +1,4 @@
+package classes;
 class User {
     // Static variable for auto-incrementing IDs
     static int idCounter = 0;

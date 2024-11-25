@@ -1,5 +1,5 @@
+package classes;
 public class Account {
-    // Static variable for auto-incrementing IDs
     static int idCounter = 0;
 
     private String accountId = "A"; 

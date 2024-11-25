@@ -1,3 +1,4 @@
+package classes;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -9,7 +10,7 @@ public class Post {
     private String content;
     private LocalDateTime createdAt;
 
-    Post(String content) {
+    public Post(String content) {
         idCounter++;
         this.postId += idCounter;
         this.content = content;
