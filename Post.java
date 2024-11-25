@@ -8,22 +8,16 @@ public class Post {
     private String postId = "P";
     private String content;
     private LocalDateTime createdAt;
-    private String userId;
 
     Post(String content, String userId) {
         idCounter++;
         this.postId += idCounter;
         this.content = content;
-        this.userId = userId;
         this.createdAt = LocalDateTime.now(); // Sets current date and time
     }
 
     public String getPostId() {
         return postId;
-    }
-
-    public String getUserId() {
-        return userId;
     }
 
     public String getContent() {
@@ -44,10 +38,6 @@ public class Post {
         this.postId = postId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
     public void setContent(String content) {
         this.content = content;
     }
@@ -59,7 +49,6 @@ public class Post {
     public void displayPost() {
         System.out.println("Post ID: " + postId);
         System.out.println("Content: " + content);
-        System.out.println("Created At: " + getFormattedCreatedAt()); // Use formatted string
-        System.out.println("User ID: " + userId);
+        System.out.println("Created At: " + getFormattedCreatedAt());
     }
 }
